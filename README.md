@@ -31,7 +31,7 @@ This code is mainly for testing. You can run the inference on testing dataset as
 
 About Training
 ----
-We directly employ [Inception in Tensorflow](https://github.com/tensorflow/models/tree/master/research/inception) to train our large visual field model and small visual field network. But note that this version of Inception doesn't provide parameters for slimming down the model. So to get the slimmed-down Inception V3, you can replace its **inception/slim/inception_model.py** with ours. You can find more details about training process in our [paper](https://link.springer.com/chapter/10.1007/978-3-319-97304-3_41). 
+We directly employ [Inception in Tensorflow](https://github.com/tensorflow/models/tree/master/research/inception) to train our large visual field model and small visual field network. But note that this version of Inception doesn't provide parameters for slimming down the model. So to get the slimmed-down Inception V3, you can replace its **inception/slim/inception_model.py** with ours. For more details about training process, please read our [paper](https://link.springer.com/chapter/10.1007/978-3-319-97304-3_41). 
 
 Citing MVF-CasCNN
 ----
