@@ -86,7 +86,10 @@ if __name__=="__main__":
     print MatPath
 
     down_sample_rate = 128
-
+    
+    # Here I use the name of CSV directory to set parameters.
+    # E.G. 'MVF-med-0-nms-5-t-0.01-csv' means that the kernel size of median filter is 0,
+    # that is, I don't apply median filtering, and the the radius of NMS is 5 and the threshold is 0.01.
     CSVPath = ''
     if not os.path.exists(CSVPath):
         os.mkdir(CSVPath)
