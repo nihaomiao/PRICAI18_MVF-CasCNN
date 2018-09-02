@@ -12,19 +12,19 @@ import time
 from scipy.sparse import coo_matrix, load_npz
 import glob
 
-tf.app.flags.DEFINE_string('test_directory', '/data/camelyon16/test',
+tf.app.flags.DEFINE_string('test_directory', '',
                            'Testing data directory')
 
-tf.app.flags.DEFINE_string('patch_directory', '/disk16t-2/nhmtmp/pricai_released_exp/pathology-test40X299-patches',
+tf.app.flags.DEFINE_string('patch_directory', '',
                            'patch directory')
 
-tf.app.flags.DEFINE_string('log_directory', '/disk16t-2/nhmtmp/pricai_released_exp/pathology-test40X299-logfiles',
+tf.app.flags.DEFINE_string('log_directory', '',
                            'log directory')
 
 tf.app.flags.DEFINE_integer('down_sample_rate', 128,
                             'down_sample_rate')
 
-tf.app.flags.DEFINE_string('lvfmap_directory', '/disk16t-2/nhmtmp/pricai_released_exp/LVF-CNN-map-upsample-mat',
+tf.app.flags.DEFINE_string('lvfmap_directory', '',
                            'large visual field map directory')
 
 tf.app.flags.DEFINE_float('lvf_thre', 0.3,
