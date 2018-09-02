@@ -1,4 +1,4 @@
-# use heatmaps from LVF-CNN to extract patches of SVF
+# Using heatmaps from LVF-CNN to extract patches of SVF
 import os
 # GPU Forbidden
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
