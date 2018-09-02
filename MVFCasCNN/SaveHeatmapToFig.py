@@ -1,4 +1,4 @@
-# Transforming heatmap Matrix to Figure and save them
+# Transforming heatmap Matrix to Figure and saving them
 # Author: Haomiao Ni
 import os
 import matplotlib.pyplot as plt
