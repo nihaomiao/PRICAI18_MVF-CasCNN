@@ -21,14 +21,16 @@ This code is mainly for testing. You can run the inference on testing dataset as
 
 2. Please run **pathology_test_tfrecords.py** to convert image patches to [tfrecord format](https://www.tensorflow.org/api_guides/python/python_io). You may find more useful information from this [link](https://www.tensorflow.org/api_guides/python/reading_data).
 
-3. Please run **pathology_test_test.py** to create the initial LVF heatmaps. Also, don't forget to set your own paths in **pathology_test_preprocessing.py** and **pathology_test_eval.py**. The trained LVF-CNN model can be downloaded [here](https://drive.google.com/open?id=1jtRN2GGpxxtThsKkdk4LjzYkES1DMOeQ).
+3. Please run **pathology_test_test.py** to create the initial LVF heatmaps. Meanwhile, don't forget to set your own paths in **pathology_test_preprocessing.py** and **pathology_test_eval.py**. The trained LVF-CNN model can be downloaded [here](https://drive.google.com/open?id=1jtRN2GGpxxtThsKkdk4LjzYkES1DMOeQ).
 
 4. To get the final LVF heatmaps, please run **UpsampleLVFHeatmap.py**.
 
-5. Subsequently, we leverage these LVF heatmaps to generate small visual field patches. Please run **pathology_generate_tumor_candidate.py** to sample SVF patches from tumor candidate areas. Then, use **pathology_test_tfrecords.py** to convert these patches to tfrecord format and run **pathology_test_test.py** to produce the final MVF-CNN heatmaps by SVF-CNN. The trained SVF-CNN model can be downloaded [here](https://drive.google.com/open?id=1ZPpmQbBFVoLzlZ7XuUyR-urPi3Ttt1sS).
+5. Subsequently, we leverage these LVF heatmaps to generate small visual field patches. Please run **pathology_generate_tumor_candidate.py** to sample SVF patches from tumor candidate areas. 
+
+6. Then, use **pathology_test_tfrecords.py** to convert these patches to tfrecord format and run **pathology_test_test.py** to produce the final MVF-CNN heatmaps by SVF-CNN. The trained SVF-CNN model can be downloaded [here](https://drive.google.com/open?id=1ZPpmQbBFVoLzlZ7XuUyR-urPi3Ttt1sS). Also, remember to set your own paths in **pathology_test_preprocessing.py** and **pathology_test_eval.py**.
 You can adopt **SaveHeatmapToFig.py** to visualize these heatmaps.
 
-6. Finally, please utilize **Evaluating_AUC.py** and **Evaluating_FROC.py** to measure the performance. Our final [MVF-CNN heatmaps]( https://drive.google.com/open?id=10tklxUWWG7LFHfeVgf6kFxNWRZCEB5Va) and [Ensemble MVF-CNN heatmaps](:https://drive.google.com/open?id=13S-HcWCB6Y7pfoEsdQgIW9hlLUqgqvBq) are also accessible online. You can directly justify the effectiveness of our methods by them.
+7. Finally, please utilize **Evaluating_AUC.py** and **Evaluating_FROC.py** to measure the performance. Both our final [MVF-CNN heatmaps]( https://drive.google.com/open?id=10tklxUWWG7LFHfeVgf6kFxNWRZCEB5Va) and [Ensemble MVF-CNN heatmaps](https://drive.google.com/open?id=13S-HcWCB6Y7pfoEsdQgIW9hlLUqgqvBq) are available online. You can directly justify the effectiveness of our methods by them.
 
 About Training
 ----
