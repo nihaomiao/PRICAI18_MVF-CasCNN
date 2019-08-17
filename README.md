@@ -2,7 +2,7 @@ MVF-CasCNN
 ====
 
 The Tensorflow implementation of our pricai18 paper [Multiple Visual Fields Cascaded Convolutional 
-Neural Network for Breast Cancer Detection](https://link.springer.com/chapter/10.1007/978-3-319-97304-3_41).
+Neural Network for Breast Cancer Detection](https://drive.google.com/open?id=1m-6PjIEbmVW4Tjz4Bb81jlNFJ5H5eoOt).
 
 <div align=center><img src="examples/overview.jpg" width="568px" height="324px"/></div>
 
